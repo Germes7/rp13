@@ -18,4 +18,7 @@ def factorial(n: int) ->int:
 
     return mult
 
-print(factorial(0))
+def average_3(a: float, b: float, c: float) -> float:
+
+    return (a + b + c) / 3
+
