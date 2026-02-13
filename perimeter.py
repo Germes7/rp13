@@ -5,3 +5,10 @@ def square_area(side: float) -> float:
 
     return "Стороны должны быть больше нуля"
 
+def rectangle_area(height: float, width: float):
+    """Периметр прямоугольника"""
+
+    if height > 0 and width > 0: return 2 * (height + width)
+
+    return "Стороны должны быть больше нуля"
+
