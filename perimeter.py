@@ -12,3 +12,10 @@ def rectangle_area(height: float, width: float):
 
     return "Стороны должны быть больше нуля"
 
+def cirkle_area(radius: float):
+    """Периметр круга"""
+
+    import math as m
+    if radius > 0: return 2 * m.pi * radius
+
+    return "Радиус должен быть больше нуля"
