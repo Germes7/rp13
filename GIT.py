@@ -26,5 +26,7 @@ def Hello():
 def square_area(side: float) -> float:
     """Площадь квадрата"""
 
-    return side ** 2
+    if side > 0: return side ** 2
+
+    return "Стороны должны быть больше нуля"
 
