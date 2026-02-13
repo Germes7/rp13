@@ -23,4 +23,8 @@ def average_3(a: float, b: float, c: float) -> float:
 def Hello():
     return "Hello"
 
-print(Hello())
+def square_area(side: float) -> float:
+    """Площадь квадрата"""
+
+    return side ** 2
+
