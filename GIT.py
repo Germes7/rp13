@@ -30,3 +30,13 @@ def square_area(side: float) -> float:
 
     return "Стороны должны быть больше нуля"
 
+def rectangle_area(height: float, width: float):
+    """Площадь прямоугольника"""
+
+    if height > 0 and width > 0: return height * width
+
+    return "Стороны должны быть больше нуля"
+
+
+def cirkle_area(radius: float):
+    pass
