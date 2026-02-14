@@ -44,3 +44,35 @@ def cirkle_area(radius: float):
     if radius > 0: return m.pi * radius ** 2
 
     return "Радиус должен быть больше нуля"
+
+from perimeter import *
+
+Flag = True
+
+while Flag:
+
+    choice = int(input("Что вы хотите посчитать: 1 -квадрат, 2 - прямоугольник, 3 -круг >"))
+
+    if choice == 1:
+        side = float(input("Введите сторону квадрата >"))
+
+        print(f"Площадь квадрата: {square_area(side)}")
+        print(f"Периметр квадрата: {square_perimeter(side)}")
+
+    elif choice == 2:
+        height = float(input("Введите высоту прямоугольника >"))
+        width = float(input("Введите ширину прямоугольника >"))
+
+        print(f"Площадь прямоугольника: {rectangle_area(height, width)}")
+        print(f"Периметр прямоугольника: {rectangle_perimeter(height, width)}")
+
+    elif choice == 3:
+        radius = float(input("Введите радиус круга >"))
+
+        print(f"Площадь круга: {cirkle_area(radius)}")
+        print(f"Периметр круга: {cirkle_perineter(radius)}")
+
+    question = int(input("Продолжить -4, Выйти -5 >"))
+
+    if question == 5:
+        Flag = False
